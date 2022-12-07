@@ -1,8 +1,8 @@
 const data = {
     products: [
         {
-            name: 'Cat Tarot',
-            slug: 'cat-tarot',
+            name: 'Cat Tarot: 78 Cards & Guidebook',
+            slug: 'cat-tarot-78-cards-guidebook',
             category: 'Tarot decks',
             image:'/images/catTarot.png',
             price: 20,
@@ -13,7 +13,7 @@ const data = {
             description: 'This entertaining modern twist to the classic tarot combines authenticity with a feline sense of humor in a complete deck for experienced and new readers alike, including 78 tarot cards and a guidebook on how to get the most out of the cat’s wisdom.'
         },
         {
-            name: 'The Rider Tarot Deck',
+            name: 'The Rider Tarot Deck – January 1, 1971',
             slug: 'the-rider-tarot-deck',
             category: 'Tarot decks',
             image:'/images/riderTarot.png',
