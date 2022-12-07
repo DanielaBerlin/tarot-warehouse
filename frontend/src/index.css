@@ -8,7 +8,7 @@ body {
 }
 
 header{
-  background-color: aquamarine;
+  background-color: rgb(55, 139, 111);
   padding: 1rem;
 }
 
@@ -16,4 +16,23 @@ header a{
   color: black;
   font-weight: bold;
   text-decoration: none;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product{
+  border: 1px black solid;
+  margin: 1rem;
+}
+
+.product img{
+  width: 100%;
+  max-width: 400px;
+}
+
+.product-info{
+  padding: 1 rem;
 }
