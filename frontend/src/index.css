@@ -7,20 +7,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header{
-  background-color: rgb(55, 139, 111);
-  padding: 1rem;
+.site-container{
+  min-height: 100vh;
 }
 
-header a{
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
+main {
+  flex: 1;
+}
+
+.btn-primary{
+  background-color: rgb(38, 127, 97);
+  color: white;
+
 }
 
 .products{
   display: flex;
   flex-wrap: wrap;
+}
+
+.rating span{
+  color:rgb(195, 107, 136);
 }
 
 .product{
