@@ -8,7 +8,7 @@ const data = {
             price: 20,
             countInStock: 10,
             Author: 'Megan Lynn Kott',
-            rating: 4.5,
+            rating: 3.5,
             numReviews: 10,
             description: 'This entertaining modern twist to the classic tarot combines authenticity with a feline sense of humor in a complete deck for experienced and new readers alike, including 78 tarot cards and a guidebook on how to get the most out of the cat’s wisdom.'
         },
@@ -18,7 +18,7 @@ const data = {
             category: 'Tarot decks',
             image:'/images/riderTarot.png',
             price: 14.99,
-            countInStock: 5,
+            countInStock: 0,
             Author: 'Arthur Edward Waite & Pamela Colman Smith',
             rating: 4.7,
             numReviews: 8,
