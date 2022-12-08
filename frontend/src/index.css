@@ -43,3 +43,7 @@ main {
 .product-info{
   padding: 1 rem;
 }
+
+.img-large {
+  max-width: 100%;
+}
