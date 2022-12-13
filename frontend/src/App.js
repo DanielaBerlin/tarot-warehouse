@@ -38,7 +38,9 @@ function App() {
           <Navbar bg="dark" variant="dark">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand> 🧙🏽 Tarot-warehouse</Navbar.Brand>
+                <Navbar.Brand>
+                <img src="/images/logo.png" width="130" height="50" class="d-inline-block align-top" alt=""/> 
+                </Navbar.Brand>
               </LinkContainer>
               <Nav className="me-auto">
                 <Link to="/cart" className="nav-link">
@@ -92,6 +94,8 @@ function App() {
         </main>
         <footer>
           <div className="text-center">All rigths reserved</div>
+          <div className="text-center"><img src="/images/logo-2.png" width="50" height="50" class="d-inline-block align-top" alt=""/> 
+          </div>
         </footer>
       </div>
     </BrowserRouter>

@@ -52,7 +52,7 @@ function HomeScreen() {
           Tarot-warehouse
         </title>
       </Helmet>
-      <h1>✨ Featured Products ✨</h1>
+      <h1>Tarot Decks </h1>
       <div className="products">
         {loading ? (
           <LoadingBox />
