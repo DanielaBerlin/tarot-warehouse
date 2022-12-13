@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.navbar-light{
+  background-color: #f4eedc;
+}
 
 .site-container{
   min-height: 100vh;
