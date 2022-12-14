@@ -42,7 +42,7 @@ function App() {
             <Container>
               <LinkContainer to="/">
                 <Navbar.Brand>
-                <img src="/images/logo-medio.png" width="50" height="50" class="d-inline-block align-top" alt=""/> 
+                <img src="/images/logo-medio.png" width="60" height="50" class="d-inline-block align-top" alt=""/> 
                 <img src="/images/logo.png" width="190" height="50" class="d-inline-block align-top" alt=""/> 
                 </Navbar.Brand>
               </LinkContainer>
@@ -103,7 +103,7 @@ function App() {
         </main>
         <footer>
           <div className="text-center">All rigths reserved</div>
-          <div className="text-center"><img src="/images/logo-medio.png" width="50" height="50" class="d-inline-block align-top" alt=""/> 
+          <div className="text-center"><img src="/images/logo-medio.png" width="60" height="50" class="d-inline-block align-top" alt=""/> 
           </div>
         </footer>
       </div>
