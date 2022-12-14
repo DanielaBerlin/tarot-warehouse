@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useReducer, useState } from 'react';
 import axios from 'axios';
 import logger from 'use-reducer-logger';
@@ -8,8 +9,6 @@ import Product from '../components/Product';
 import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
-
-// import data from "../data";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -41,8 +40,6 @@ function HomeScreen() {
       } catch (err) {
         dispatch({ type: 'FETCH_FAIL', payload: err.message });
       }
-
-      // setProducts(result.data);
     };
     fetchData();
   }, []);
@@ -53,6 +50,31 @@ function HomeScreen() {
           Tarot-warehouse
         </title>
       </Helmet>
+      <div>
+     <Carousel variant="dark">
+      <Carousel.Item>
+        <img
+       className="d-block w-100 img-fluid"
+          src="/images/slide1.png"
+          allowFullScreen
+          alt="First slide" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 img-fluid"
+          src="/images/slide2.png"
+          alt="Second slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 img-fluid"
+          src="/images/slide3.png"
+          alt="Third slide"
+        />
+      </Carousel.Item>
+    </Carousel>
+    </div>
       <h1>Tarot Decks </h1>
       <div className="products">
         {loading ? (
@@ -69,45 +91,6 @@ function HomeScreen() {
           </Row>
         )}
       </div>
-      <div>
-            <Carousel variant="dark">
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/slide1.png"
-          alt="First slide"
-        />
-        {/* <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption> */}
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/home.png"
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/home.png"
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-    </div>
     </div>
   );
 }
