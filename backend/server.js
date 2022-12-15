@@ -11,14 +11,25 @@ dotenv.config();
 
 mongoose
   .connect(process.env.MONGODB_URI)
-  .then(() => {
-    console.log('DB connected 🫱🏿‍🫲🏾');
+  .then((response) => {
+    console.log(`DB connected 🫱🏿‍🫲🏾 "${response.connections[0].name}"' `);
   })
   .catch((err) => {
     console.log(err.message);
   });
 
 const app = express();
+
+const cors = require('cors');
+
+const FRONTEND_URL = process.env.ORIGIN || 'http://localhost:3000';
+
+app.use(
+  cors({
+    origin: [FRONTEND_URL],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
