@@ -1,14 +1,14 @@
 import express from 'express';
 import Product from '../models/productModel.js';
 
-const ProductRouter = express.Router();
+const productRouter = express.Router();
 
-ProductRouter.get('/', async (req, res) => {
+productRouter.get('/', async (req, res) => {
   const products = await Product.find();
   res.send(products);
 });
 
-ProductRouter.get('/slug/:slug', async (req, res) => {
+productRouter.get('/slug/:slug', async (req, res) => {
   const product = await Product.findOne({ slug: req.params.slug });
   if (product) {
     res.send(product);
@@ -16,7 +16,7 @@ ProductRouter.get('/slug/:slug', async (req, res) => {
     res.status(404).send({ message: 'Product Not Found 😥' });
   }
 });
-ProductRouter.get('/:id', async (req, res) => {
+productRouter.get('/:id', async (req, res) => {
   const product = await Product.findById(req.params.id);
   if (product) {
     res.send(product);
@@ -25,4 +25,4 @@ ProductRouter.get('/:id', async (req, res) => {
   }
 });
 
-export default ProductRouter;
+export default productRouter;
