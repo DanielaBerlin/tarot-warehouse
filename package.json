@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "1. Install Tools 2. Create React App 3. Create Git Repository",
   "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "build":"cd backend && npm install && cd ../frontend && npm install && npm run build",
     "start": "node backend/server.js",
