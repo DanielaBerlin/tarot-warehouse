@@ -6,8 +6,9 @@
 
 ## Tarot-warehouse is an e-commerce website
 
-![Screenshot 2022-12-26 at 01 08 08](https://user-images.githubusercontent.com/88034782/209485412-9a642a36-3b4b-49c4-bec5-1cb810ac461d.png)
-![Screenshot 2022-12-26 at 01 08 26](https://user-images.githubusercontent.com/88034782/209485414-56eb7ef4-af4e-45a9-b4db-399ee15bda1b.png)
+![Screenshot 2022-12-26 at 01 08 08](https://user-images.githubusercontent.com/88034782/209554976-0e6ae049-750d-4929-a253-71640eb659a0.png)
+
+![Screenshot 2022-12-26 at 01 08 26](https://user-images.githubusercontent.com/88034782/209554981-9b3885b8-10fd-4c30-9ded-9ddc8b981da2.png)
 
 ## How to start 🪄
 
